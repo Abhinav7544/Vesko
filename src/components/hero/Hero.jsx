@@ -52,9 +52,9 @@ const Hero = () => {
           </motion.h1>
           <motion.div variants={textVariants} className="buttons">
             <motion.button variants={textVariants}>
-              See the Latest Works
+              What we do
             </motion.button>
-            <motion.button variants={textVariants}>Contact Me</motion.button>
+            <motion.button variants={textVariants}>Contact us</motion.button>
           </motion.div>
           <motion.img
             variants={textVariants}
@@ -64,14 +64,6 @@ const Hero = () => {
           />
         </motion.div>
       </div>
-      <motion.div
-        className="slidingTextContainer"
-        variants={sliderVariants}
-        initial="initial"
-        animate="animate"
-      >
-        Writer Content Creator Influencer
-      </motion.div>
       <div className="imageContainer">
         <img src="/favicon.ico" alt="" />
       </div>

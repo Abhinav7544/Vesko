@@ -10,6 +10,8 @@
     max-width: 1366px;
     height: 100%;
     margin: auto;
+    display: flex;
+    justify-content: center;
 
     .textContainer {
       width: 50%;
@@ -44,10 +46,10 @@
       .buttons {
         button {
           padding: 20px;
-          border: 1px solid white;
+          border: 1px solid black;
           border-radius: 10px;
           background-color: transparent;
-          color: #FBFADA;
+          color: black;
           margin-right: 20px;
           cursor: pointer;
           font-weight: 300;
@@ -78,6 +80,8 @@
       height: 70%;
       border-radius: 50%;
       object-fit: cover;
+      display: flex;
+      justify-content: center;
     }
   }
 
