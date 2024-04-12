@@ -19,12 +19,14 @@
 
     .progressBar {
       height: 10px;
-      background-color: white;
+      background-color: #65B741;
     }
   }
 
   .container {
     display: flex;
+    background: linear-gradient(180deg, #f0e3b7, #FBFADA);
+
     align-items: center;
     justify-content: center;
     width: 100%;
