@@ -68,7 +68,7 @@
         padding: 20px;
         background-color: transparent;
         border: 1px solid black;
-        color: white;
+        color: black;
         border-radius: 5px;
 
         @include mobile {
@@ -80,6 +80,7 @@
         padding: 20px;
         border: none;
         background-color: orange;
+        border-radius: 10px;
         cursor: pointer;
         font-weight: 500;
         @include mobile {
