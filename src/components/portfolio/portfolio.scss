@@ -43,6 +43,7 @@
 
       @include mobile {
         flex-direction: column;
+        gap:10px;
       }
 
       .imageContainer {
