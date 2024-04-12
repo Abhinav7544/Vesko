@@ -55,7 +55,7 @@ const Hero = () => {
         </motion.div>
 
         <div className="imageContainer">
-          <img src="/favicon.ico" alt="" />
+          <img src="/favicon.ico" alt="vesko_logo" />
         </div>
       </div>
     </div>
