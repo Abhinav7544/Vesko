@@ -4,7 +4,6 @@
   height: calc(100vh - 100px);
   overflow: hidden;
   background: linear-gradient(180deg, #f0e3b7, #FBFADA);
-
   position: relative;
 
 
@@ -15,6 +14,7 @@
     display: flex;
     align-content: center;
     justify-content: center;
+    color: #1B5E20;
 
     @include mobile{
       margin-top: 2rem;
@@ -27,7 +27,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      gap: 40px;
+      gap: 80px;
 
       @include mobile {
         height: 50%;
@@ -44,24 +44,27 @@
       }
 
       h1 {
-        font-size: 88px;
+        font-size: 150px;
 
         @include mobile {
           font-size: 36px;
         }
       }
+      p{
+        font-size: 25px;
+      }
 
       .buttons {
-        button {
+        a {
           padding: 20px;
-          border: 1px solid black;
+          border: 1px solid #1B5E20;;
           border-radius: 10px;
           background-color: transparent;
-          color: black;
           margin-right: 20px;
           cursor: pointer;
           font-size: larger;
           font-weight: 500;
+          color: #1B5E20;
 
           @include mobile{
            padding: 10px;
