@@ -37,13 +37,6 @@ const sliderVariants = {
   },
 };
 
-const scrollToSection = (sectionId) => {
-  const section = document.getElementById(sectionId);
-  if (section) {
-    section.scrollIntoView({ behavior: "smooth" });
-  }
-};
-
 const Hero = () => {
   return (
     <div className="hero">
@@ -54,10 +47,12 @@ const Hero = () => {
           initial="initial"
           animate="animate"
         >
+          <div>
           <motion.h1 variants={textVariants}>Vesko</motion.h1>
+          <motion.p>Pioneering the next generation of e-commerce</motion.p>
+          </div>
           <motion.div variants={textVariants} className="buttons">
-            <motion.button variants={textVariants} onClick={()=>  scrollToSection("portfolio")}>What we do</motion.button>
-            <motion.button variants={textVariants} onClick={()=>  scrollToSection("contact")}>Contact us</motion.button>
+            <motion.a variants={textVariants} href="/#contact">Contact us</motion.a>
           </motion.div>
         </motion.div>
 
