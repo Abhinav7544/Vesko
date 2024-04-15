@@ -47,15 +47,17 @@ const Hero = () => {
           initial="initial"
           animate="animate"
         >
+          <div>
           <motion.h1 variants={textVariants}>Vesko</motion.h1>
+          <motion.p>Pioneering the next generation of e-commerce</motion.p>
+          </div>
           <motion.div variants={textVariants} className="buttons">
-            <motion.button variants={textVariants}>What we do</motion.button>
-            <motion.button variants={textVariants}>Contact us</motion.button>
+            <motion.a variants={textVariants} href="/#contact">Contact us</motion.a>
           </motion.div>
         </motion.div>
 
         <div className="imageContainer">
-          <img src="/favicon.ico" alt="" />
+          <img src="/favicon.ico" alt="vesko_logo" />
         </div>
       </div>
     </div>
