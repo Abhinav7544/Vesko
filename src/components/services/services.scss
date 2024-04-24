@@ -1,6 +1,6 @@
 @import "../../app.scss";
 .services {
-  background: linear-gradient(180deg, #f0e3b7, #FBFADA);
+  background: linear-gradient(360deg, #038B56, #026b42);
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -23,7 +23,7 @@
     p {
       font-weight: 200;
       font-size: 20px;
-      color: gray;
+      color: #f0e3b7;
       text-align: right;
     }
 
@@ -83,7 +83,7 @@
         width: 300px;
         height: 100px;
         border-radius: 50px;
-        background-color: orange;
+        background-color: #f0e3b7;
         border: none;
         font-size: 24px;
         cursor: pointer;
@@ -129,15 +129,15 @@
 
       button {
         padding: 10px;
-        background-color: orange;
+        background-color: #f0e3b7;
         border: none;
         cursor: pointer;
 
         @include mobile {
           background-color: transparent;
-          border: 1px solid orange;
+          border: 1px solid #f0e3b7;
           border-radius: 5px;
-          color: orange;
+          color: #f0e3b7;
           width: 50%;
           padding: 5px;
         }

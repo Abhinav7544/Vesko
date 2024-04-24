@@ -3,7 +3,8 @@
 .hero {
   height: calc(100vh - 100px);
   overflow: hidden;
-  background: linear-gradient(180deg, #f0e3b7, #FBFADA);
+  background: #025937;
+  // background: linear-gradient(180deg, #f0e3b7, #FBFADA);
   position: relative;
 
   .wrapper {
@@ -13,7 +14,7 @@
     display: flex;
     align-content: center;
     justify-content: center;
-    color: #1B5E20;
+    color: #f0e3b7;
 
     @include mobile{
       margin-top: 3rem;
@@ -61,14 +62,14 @@
       .buttons {
         a {
           padding: 20px;
-          border: 1px solid #1B5E20;;
+          border: 1px solid #f0e3b7;
           border-radius: 10px;
           background-color: transparent;
           margin-right: 20px;
           cursor: pointer;
           font-size: larger;
           font-weight: 500;
-          color: #1B5E20;
+          color: #f0e3b7;
 
           @include mobile{
            padding: 10px;

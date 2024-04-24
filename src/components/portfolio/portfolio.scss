@@ -9,7 +9,7 @@
     left: 0;
     padding-top: 50px;
     text-align: center;
-    color: orange;
+    color: #f0e3b7;
     font-size: 36px;
     z-index: 999;
 
@@ -20,13 +20,13 @@
 
     .progressBar {
       height: 10px;
-      background-color: #65B741;
+      background-color: #f0e3b7;
     }
   }
 
   .container {
     display: flex;
-    background: linear-gradient(180deg, #f0e3b7, #FBFADA);
+    background: linear-gradient(360deg, #038B56, #026b42);
 
     align-items: center;
     justify-content: center;
@@ -83,6 +83,7 @@
 
         h2 {
           font-size: 72px;
+          color: beige;
 
           @include mobile {
             font-size: 36px;
@@ -90,7 +91,7 @@
         }
 
         p {
-          color: gray;
+          color: #f0e3b7;
           font-size: 20px;
 
           @include mobile {
@@ -99,7 +100,7 @@
         }
 
         button {
-          background-color: orange;
+          background-color: #f0e3b7;
           border: none;
           border-radius: 10px;
           padding: 10px;

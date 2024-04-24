@@ -45,19 +45,19 @@ const Services = () => {
         <div className="title">
           <img src="/people.webp" alt="" />
           <h1>
-            <motion.b whileHover={{color:"orange"}}>Unique</motion.b> Ideas
+            <motion.b whileHover={{color:"#f0e3b7"}}>Unique</motion.b> Ideas
           </h1>
         </div>
         <div className="title">
           <h1>
-            <motion.b whileHover={{color:"orange"}}>For Your</motion.b> Business.
+            <motion.b whileHover={{color:"#f0e3b7"}}>For Your</motion.b> Business.
           </h1>
         </div>
       </motion.div>
       <motion.div className="listContainer" variants={variants}>
         <motion.div
           className="box"
-          whileHover={{ background: "lightgray", color: "black" }}
+          whileHover={{ background: "Beige", color: "black" }}
         >
           <h2>Lorem</h2>
           <p>
@@ -70,7 +70,7 @@ const Services = () => {
         </motion.div>
         <motion.div
           className="box"
-          whileHover={{ background: "lightgray", color: "black" }}
+          whileHover={{ background: "Beige", color: "black" }}
         >
           <h2>Lorem</h2>
           <p>
@@ -83,7 +83,7 @@ const Services = () => {
         </motion.div>
         <motion.div
           className="box"
-          whileHover={{ background: "lightgray", color: "black" }}
+          whileHover={{ background: "Beige", color: "black" }}
         >
           <h2>Lorem</h2>
           <p>
@@ -96,7 +96,7 @@ const Services = () => {
         </motion.div>
         <motion.div
           className="box"
-          whileHover={{ background: "lightgray", color: "black" }}
+          whileHover={{ background: "Beige", color: "black" }}
         >
           <h2>Lorem</h2>
           <p>

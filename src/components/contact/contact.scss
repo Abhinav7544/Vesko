@@ -7,6 +7,7 @@
   display: flex;
   align-items: center;
   gap: 50px;
+  color: #f0e3b7;
 
   @include mobile {
     width: 100%;
@@ -52,7 +53,7 @@
 
 
     .phoneSvg {
-      stroke: orange;
+      stroke: #f0e3b7;
       position: absolute;
       margin: auto;
       z-index: -1;
@@ -67,8 +68,8 @@
       textarea {
         padding: 20px;
         background-color: transparent;
-        border: 1px solid black;
-        color: black;
+        border: 1px solid #f0e3b7;
+        color: #f0e3b7;
         border-radius: 5px;
 
         @include mobile {
@@ -79,7 +80,7 @@
       button {
         padding: 20px;
         border: none;
-        background-color: orange;
+        background-color: #f0e3b7;
         border-radius: 10px;
         cursor: pointer;
         font-weight: 500;
