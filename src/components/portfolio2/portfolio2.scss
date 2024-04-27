@@ -3,7 +3,6 @@
 .portfolio {
   position: relative;
 
-
   .progress {
     position: sticky;
     top: 0;
@@ -27,8 +26,7 @@
 
   .container {
     display: flex;
-    background: linear-gradient(360deg, #038B56, #026b42);
-
+    background: #007F73;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -46,9 +44,7 @@
 
       @include mobile {
         flex-direction: column;
-        gap:0px;
-      }
-
+        gap: 0px;
       }
 
       .textContainer {
@@ -58,12 +54,9 @@
         gap: 30px;
 
         @include mobile {
-          transform: none !important;
           align-items: center;
           text-align: center;
-          gap:10px;
-        }
-
+          gap: 10px;
         }
 
         p {
@@ -76,3 +69,5 @@
         }
       }
     }
+  }
+}

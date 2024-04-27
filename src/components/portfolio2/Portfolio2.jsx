@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import "./portfolio.scss";
+import "./portfolio2.scss";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 
 const items = [
@@ -9,16 +9,18 @@ const items = [
   },
   {
     id: 2,
-    desc: "THE PLATFORM IS A MARKETPLACE WHERE MERCHANTS CAN CREATE THEIR ONLINE STORE AND LIST PRODUCTS WITHIN MINUTES, ENABLING BOTH ONLINE AND OFFLINE SALES AND OFFERING FAST LOCAL DELIVERY",
-  },
- 
-  {
-    id: 3,
-    desc: "VESKO WILL BE THE FIRST OMNICHANNEL* PLATFORM THAT INCLUDES ONLINE, OFFLINE, DELIVERY, AND COMMUNICATION CHANNEL, ALL 4 IN 1"
-  },
-  {
-    id: 4,
-    desc: "VESKO WILL BE THE PIONEERING E-COMMERCE PLATFORM ELIMINATING THE NEED FOR SEPARATE WAREHOUSES. MERCHANTS CAN FULFILL ONLINE ORDERS DIRECTLY FROM THEIR STORE SHELVES"
+    desc: `Outstanding Features:
+           <ul>
+             <li>No Need for Separate storage.</li>
+             <li>Direct Communication with Users.</li>
+             <li>Semi Customisable Store.</li>
+             <li>Point of sale system for offline sales.</li>
+             <li>Secured payment system.</li>
+             <li>Inventory Management System.</li>
+             <li>Customisable Sales Dashboard.</li>
+             <li>Ability to Offer Different Sell Options.</li>
+             <li>Ability to Offer fast last mile delivery, as fast as 30 min.</li>
+           </ul>`,
   },
 ];
 
@@ -32,22 +34,19 @@ const Single = ({ item }) => {
   const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
 
   return (
-    <section >
+    <section>
       <div className="container">
         <div className="wrapper">
-        <div className="imageContainer" ref={ref}>
-            <img src={item.img} alt="" />
+          <div className="textContainer" ref={ref}>
+            <motion.div style={{ y }} dangerouslySetInnerHTML={{ __html: item.desc }} />
           </div>
-          <motion.div className="textContainer" style={{y}}>
-            <p>{item.desc}</p>
-          </motion.div>
         </div>
       </div>
     </section>
   );
 };
 
-const Portfolio = () => {
+const Portfolio2 = () => {
   const ref = useRef();
 
   const { scrollYProgress } = useScroll({
@@ -63,8 +62,8 @@ const Portfolio = () => {
   return (
     <div className="portfolio" id="portfolio" ref={ref}>
       <div className="progress">
-        <h2>About Vesko</h2>
-        <motion.div style={{ scaleX }} className="progressBar"></motion.div>
+        <h2>What Vesko will provide for Local stores</h2>
+        <motion.div className="progressBar" style={{ scaleX }}></motion.div>
       </div>
       {items.map((item) => (
         <Single item={item} key={item.id} />
@@ -73,4 +72,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default Portfolio2;

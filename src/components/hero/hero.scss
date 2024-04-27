@@ -12,6 +12,8 @@
     height: 100%;
     margin: auto;
     display: flex;
+    align-content: center;
+    justify-content: center;
     color: #f0e3b7;
 
     @include mobile{

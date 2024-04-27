@@ -1,25 +1,21 @@
 import { useRef } from "react";
-import "./portfolio.scss";
+import "./portfolio4.scss";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 
 const items = [
   {
     id: 1,
-    desc: "VESKO IS A PLATFORM PROVIDING ONLINE-TO-OFFLINE (O2O) RETAIL SOLUTIONS TAILORED FOR LOCAL OFFLINE RETAILERS",
+    title: "Advanced Version",
+desc: "The advance version of Vesko will be able to forecast consumer demands to help Vendors to optimizing their product line to increase sales."
   },
   {
     id: 2,
-    desc: "THE PLATFORM IS A MARKETPLACE WHERE MERCHANTS CAN CREATE THEIR ONLINE STORE AND LIST PRODUCTS WITHIN MINUTES, ENABLING BOTH ONLINE AND OFFLINE SALES AND OFFERING FAST LOCAL DELIVERY",
-  },
- 
+    title: "Personal Assistant",
+desc: "Vesko will include Cyber Space that provides Users with tailored products without wasting time on info & product search."  },
   {
     id: 3,
-    desc: "VESKO WILL BE THE FIRST OMNICHANNEL* PLATFORM THAT INCLUDES ONLINE, OFFLINE, DELIVERY, AND COMMUNICATION CHANNEL, ALL 4 IN 1"
-  },
-  {
-    id: 4,
-    desc: "VESKO WILL BE THE PIONEERING E-COMMERCE PLATFORM ELIMINATING THE NEED FOR SEPARATE WAREHOUSES. MERCHANTS CAN FULFILL ONLINE ORDERS DIRECTLY FROM THEIR STORE SHELVES"
-  },
+    title: "Inventory Management",
+desc: "The inventory management system will also include the Cyber Space to assist the employees and optimize store operations to minimize waste"  },
 ];
 
 const Single = ({ item }) => {
@@ -35,10 +31,11 @@ const Single = ({ item }) => {
     <section >
       <div className="container">
         <div className="wrapper">
-        <div className="imageContainer" ref={ref}>
+          <div className="imageContainer" ref={ref}>
             <img src={item.img} alt="" />
           </div>
           <motion.div className="textContainer" style={{y}}>
+            <h2>{item.title}</h2>
             <p>{item.desc}</p>
           </motion.div>
         </div>
@@ -47,7 +44,7 @@ const Single = ({ item }) => {
   );
 };
 
-const Portfolio = () => {
+const Portfolio4 = () => {
   const ref = useRef();
 
   const { scrollYProgress } = useScroll({
@@ -61,9 +58,9 @@ const Portfolio = () => {
   });
 
   return (
-    <div className="portfolio" id="portfolio" ref={ref}>
+    <div className="portfolio" ref={ref}>
       <div className="progress">
-        <h2>About Vesko</h2>
+        <h2>Advanced Version of Vesko</h2>
         <motion.div style={{ scaleX }} className="progressBar"></motion.div>
       </div>
       {items.map((item) => (
@@ -73,4 +70,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default Portfolio4;
