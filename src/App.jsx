@@ -18,9 +18,9 @@ const App = () => {
         <Navbar />
         <Hero />
       </section>
-      <section id="about">
+      {/* <section id="about">
         <Services />
-      </section>
+      </section> */}
       <Portfolio />
       <Portfolio2 />
       <Portfolio3 />
