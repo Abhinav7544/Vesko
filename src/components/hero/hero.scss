@@ -12,13 +12,11 @@
     height: 100%;
     margin: auto;
     display: flex;
-    align-content: center;
-    justify-content: center;
     color: #f0e3b7;
 
     @include mobile{
-      margin-top: 3rem;
-       flex-direction: column;
+       flex-direction: column-reverse;
+       height: fit-content;
     }
 
     .textContainer {
@@ -32,9 +30,9 @@
       @include mobile {
         height: 50%;
         width: 100%;
-        gap: 40px;
         align-items: center;
-        text-align: center;
+        text-align: left;
+        margin-left: 10px;
       }
 
       h2 {
@@ -47,15 +45,17 @@
         font-size: 150px;
 
         @include mobile {
-          font-size: 50px;
+          display: none;
         }
       }
       p{
         font-size: 25px;
 
         @include mobile{
-          width: 90%;
-          margin-left: 10px;
+          font-size: 18px;
+          margin-left: 30px;
+          margin-right: 20px;
+          letter-spacing: 1px;
         }
       }
 
@@ -89,6 +89,7 @@
         width: 100%;
         top: unset;
         bottom: 0;
+        display: inline;
       }
   
       img{
@@ -102,8 +103,8 @@
         justify-items: center;
 
         @include mobile{
-          margin-top: 40px;
-          padding: 1rem
+          margin-top: 20px;
+          
         }
       }
     }
@@ -131,10 +132,6 @@
       object-fit: cover;
       display: flex;
       justify-content: center;
-
-      @include mobile{
-        margin-top: 0px;
-      }
     }
   }
 
