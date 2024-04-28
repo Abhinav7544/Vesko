@@ -7,26 +7,22 @@ const items = [
     id: 1,
     desc: "VESKO IS A PLATFORM PROVIDING ONLINE-TO-OFFLINE (O2O) RETAIL SOLUTIONS TAILORED FOR LOCAL OFFLINE RETAILERS",
     backgroundColor: "#A5D6A7",
-    img: "/people.webp"
   },
   {
     id: 2,
     desc: "THE PLATFORM IS A MARKETPLACE WHERE MERCHANTS CAN CREATE THEIR ONLINE STORE AND LIST PRODUCTS WITHIN MINUTES, ENABLING BOTH ONLINE AND OFFLINE SALES AND OFFERING FAST LOCAL DELIVERY",
     backgroundColor: "#81C784",
-    img: "/people.webp"
   },
  
   {
     id: 3,
     desc: "VESKO WILL BE THE FIRST OMNICHANNEL* PLATFORM THAT INCLUDES ONLINE, OFFLINE, DELIVERY, AND COMMUNICATION CHANNEL, ALL 4 IN 1",
     backgroundColor: "#A5D6A7",
-    img: "/people.webp"
   },
   {
     id: 4,
     desc: "VESKO WILL BE THE PIONEERING E-COMMERCE PLATFORM ELIMINATING THE NEED FOR SEPARATE WAREHOUSES. MERCHANTS CAN FULFILL ONLINE ORDERS DIRECTLY FROM THEIR STORE SHELVES",
     backgroundColor: "#81C784",
-    img: "/people.webp"
   },
 ];
 
@@ -37,15 +33,12 @@ const Single = ({ item }) => {
     target: ref,
   });
 
-  const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
+  const y = useTransform(scrollYProgress, [0, 1], [0, 0]);
 
   return (
     <section>
       <div className="container" style={{backgroundColor: item.backgroundColor}}>
         <div className="wrapper">
-        <div className="imageContainer" ref={ref}>
-            <img src={item.img} alt="" />
-          </div>
           <motion.div className="textContainer" style={{y}}>
             <p>{item.desc}</p>
           </motion.div>
