@@ -3,7 +3,6 @@
 .portfolio {
   position: relative;
 
-
   .progress {
     position: sticky;
     top: 0;
@@ -14,9 +13,14 @@
     font-size: 36px;
     z-index: 999;
 
+   
+
     @include mobile {
       padding-top: calc(100vh - 100px);
       font-size: 24px;
+    }
+    h2{
+      color:#917929;
     }
 
     .progressBar {
@@ -27,7 +31,7 @@
 
   .container {
     display: flex;
-    background: linear-gradient(360deg, #038B56, #026b42);
+    
 
     align-items: center;
     justify-content: center;
@@ -46,7 +50,21 @@
 
       @include mobile {
         flex-direction: column;
-        gap:0px;
+        padding-top: 5rem;
+      }
+
+      .imageContainer{
+        height: 100%;
+        img{
+          border-radius: 20%;
+
+          @include mobile{
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            border-radius: 40%;
+          }
+        }
       }
 
       }

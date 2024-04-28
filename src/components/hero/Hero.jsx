@@ -41,23 +41,19 @@ const Hero = () => {
   return (
     <div className="hero">
       <div className="wrapper">
+        <div className="container">
         <motion.div
           className="textContainer"
           variants={textVariants}
           initial="initial"
           animate="animate"
         >
-          <div>
           <motion.h1 variants={textVariants}>Vesko</motion.h1>
           <motion.p>PIONEERING THE NEXT GENERATION OF E-COMMERCE</motion.p>
-          </div>
-          <motion.div variants={textVariants} className="buttons">
-            <motion.a variants={textVariants} href="/#contact">Contact us</motion.a>
           </motion.div>
-        </motion.div>
-
-        <div className="imageContainer">
+          <div className="imageContainer">
           <img src="/favicon.ico" alt="vesko_logo" />
+          </div>
         </div>
       </div>
     </div>
