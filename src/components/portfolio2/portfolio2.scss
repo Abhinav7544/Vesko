@@ -26,7 +26,6 @@
 
   .container {
     display: flex;
-    background: #007F73;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -39,7 +38,7 @@
       margin: auto;
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: space-between;
       gap: 50px;
 
       @include mobile {
@@ -52,6 +51,36 @@
         display: flex;
         flex-direction: column;
         gap: 30px;
+        padding: 2rem;
+        color: black;
+        border-radius: 10px;
+        width: 500px;
+
+        @include mobile{
+          width:300px;
+        }
+        ul{
+          
+          p{
+            color: #f0e3b7;
+            font-size: 30px;
+            margin-bottom: 10px;
+          }
+          li{
+            margin-top: 10px;
+            font-size: 20px;
+            list-style: none;
+           
+            height: fit-content;
+
+            @include mobile{
+              font-size: 15px;
+            }
+            
+          }
+        }
+
+       
 
         @include mobile {
           align-items: center;

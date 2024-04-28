@@ -3,7 +3,6 @@
 .portfolio {
   position: relative;
 
-
   .progress {
     position: sticky;
     top: 0;
@@ -14,9 +13,14 @@
     font-size: 36px;
     z-index: 999;
 
+   
+
     @include mobile {
       padding-top: calc(100vh - 100px);
       font-size: 24px;
+    }
+    h2{
+      color:#917929;
     }
 
     .progressBar {
@@ -27,13 +31,14 @@
 
   .container {
     display: flex;
-    background: linear-gradient(360deg, #038B56, #026b42);
+    
 
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 100%;
     overflow: hidden;
+    color:#f0e3b7;
 
     .wrapper {
       max-width: 1366px;
@@ -46,7 +51,22 @@
 
       @include mobile {
         flex-direction: column;
-        gap:0px;
+        
+      }
+
+      .imageContainer{
+        height: fit-content;
+
+        img{
+          border-radius: 10%;
+
+          @include mobile{
+           padding:  10px;
+            display: flex;
+            justify-content: center;
+            border-radius: 5%;
+          }
+        }
       }
 
       }
@@ -56,6 +76,7 @@
         display: flex;
         flex-direction: column;
         gap: 30px;
+        color: #f0e3b7;
 
         @include mobile {
           transform: none !important;
@@ -67,7 +88,7 @@
         }
 
         p {
-          color: black;
+          
           font-size: 50px;
 
           @include mobile {

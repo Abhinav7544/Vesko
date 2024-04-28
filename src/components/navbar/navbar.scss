@@ -12,27 +12,21 @@
     justify-content: space-between;
     height: 100%;
 
-    @include mobile {
-      justify-content: flex-end;
-      padding: 20px;
-    }
+    .buttons {
+      a {
+        padding: 6px;
+        border: 1px solid #f0e3b7;
+        border-radius: 5px;
+        background-color: transparent;
+        margin-right: 20px;
+        cursor: pointer;
+        font-size: larger;
+        font-weight: 500;
+        color: #f0e3b7;
 
-    span {
-      font-weight: bold;
-
-      @include mobile {
-        display: none;
-      }
-    }
-
-    .social {
-      display: flex;
-      gap: 19px;
-
-      img {
-        width: 25px;
-        height: 25px;
-        margin: 0px;
+        @include mobile{
+         padding: 6px;
+        }
       }
     }
   }

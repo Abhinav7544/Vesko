@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 const Navbar = () => {
   return (
     <div className="navbar">
-      {/* Sidebar */}
       <Sidebar/>
       <div className="wrapper">
         <motion.span
@@ -15,11 +14,9 @@ const Navbar = () => {
         >
           
         </motion.span>
-        <div className="social">
-          <a href="#">
-            <img src="/public/linkedin.png" alt="" />
-          </a>
-        </div>
+        <motion.div className="buttons">
+            <motion.a href="/#contact">Contact us</motion.a>
+          </motion.div>
       </div>
     </div>
   );
