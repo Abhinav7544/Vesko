@@ -7,26 +7,26 @@ const items = [
     id: 1,
     desc: "VESKO IS A PLATFORM PROVIDING ONLINE-TO-OFFLINE (O2O) RETAIL SOLUTIONS TAILORED FOR LOCAL OFFLINE RETAILERS",
     backgroundColor: "#A5D6A7",
-    img: "/favicon.ico"
+    img: "/people.webp"
   },
   {
     id: 2,
     desc: "THE PLATFORM IS A MARKETPLACE WHERE MERCHANTS CAN CREATE THEIR ONLINE STORE AND LIST PRODUCTS WITHIN MINUTES, ENABLING BOTH ONLINE AND OFFLINE SALES AND OFFERING FAST LOCAL DELIVERY",
     backgroundColor: "#81C784",
-    img: "/favicon.ico"
+    img: "/people.webp"
   },
  
   {
     id: 3,
     desc: "VESKO WILL BE THE FIRST OMNICHANNEL* PLATFORM THAT INCLUDES ONLINE, OFFLINE, DELIVERY, AND COMMUNICATION CHANNEL, ALL 4 IN 1",
     backgroundColor: "#A5D6A7",
-    img: "/favicon.ico"
+    img: "/people.webp"
   },
   {
     id: 4,
     desc: "VESKO WILL BE THE PIONEERING E-COMMERCE PLATFORM ELIMINATING THE NEED FOR SEPARATE WAREHOUSES. MERCHANTS CAN FULFILL ONLINE ORDERS DIRECTLY FROM THEIR STORE SHELVES",
     backgroundColor: "#81C784",
-    img: "/favicon.ico"
+    img: "/people.webp"
   },
 ];
 

@@ -6,11 +6,14 @@ const items = [
   {
     id: 1,
     desc: "VESKO IS A PLATFORM PROVIDING ONLINE-TO-OFFLINE (O2O) RETAIL SOLUTIONS TAILORED FOR LOCAL OFFLINE RETAILERS",
+    backgroundColor: "#4ce4d5",
+    img: "/people.webp"
   },
   {
     id: 2,
-    desc: `Outstanding Features:
+    desc: [
            <ul>
+            <p>OUR FEATURES</p>
              <li>No Need for Separate storage.</li>
              <li>Direct Communication with Users.</li>
              <li>Semi Customisable Store.</li>
@@ -20,7 +23,10 @@ const items = [
              <li>Customisable Sales Dashboard.</li>
              <li>Ability to Offer Different Sell Options.</li>
              <li>Ability to Offer fast last mile delivery, as fast as 30 min.</li>
-           </ul>`,
+           </ul>
+    ],
+    backgroundColor:"#0dc1af",
+    img: "/people.webp"
   },
 ];
 
@@ -35,11 +41,14 @@ const Single = ({ item }) => {
 
   return (
     <section>
-      <div className="container">
+      <div className="container" style={{backgroundColor: item.backgroundColor}}>
         <div className="wrapper">
-          <div className="textContainer" ref={ref}>
-            <motion.div style={{ y }} dangerouslySetInnerHTML={{ __html: item.desc }} />
+        <div className="imageContainer" ref={ref}>
+            <img src={item.img} alt="" />
           </div>
+          <motion.div className="textContainer" style={{y}}>
+            {item.desc}
+          </motion.div>
         </div>
       </div>
     </section>
@@ -60,15 +69,15 @@ const Portfolio2 = () => {
   });
 
   return (
-    <div className="portfolio" id="portfolio" ref={ref}>
-      <div className="progress">
-        <h2>What Vesko will provide for Local stores</h2>
-        <motion.div className="progressBar" style={{ scaleX }}></motion.div>
-      </div>
-      {items.map((item) => (
-        <Single item={item} key={item.id} />
-      ))}
+    <div className="portfolio" id="portfolio2" ref={ref}>
+    <div className="progress">
+      <h2>Vesko for Local Vendors</h2>
+      <motion.div style={{ scaleX }} className="progressBar"></motion.div>
     </div>
+    {items.map((item) => (
+      <Single item={item} key={item.id}/>
+    ))}
+  </div>
   );
 };
 
