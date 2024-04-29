@@ -9,6 +9,7 @@ import Portfolio3 from "./components/portfolio3/Portfolio3";
 import Portfolio4 from "./components/portfolio4/Portfolio4";
 import Services from "./components/services/Services";
 import Sidebar from "./components/sidebar/Sidebar";
+import TopButton from "./components/topbutton/TopButton";
 
 const App = () => {
   return (
@@ -28,7 +29,7 @@ const App = () => {
       <section id="contact">
         <Contact />
       </section>
-      
+      <TopButton />
     </div>
   );
 };

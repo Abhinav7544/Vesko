@@ -1,0 +1,35 @@
+@import "../../app.scss";
+
+.top-button-container {
+    position: fixed;
+    bottom: 2rem;
+    right: -100%;
+    transition: right 0.8s ease-in-out;
+
+    @include mobile{
+        bottom: 1rem;
+    }
+  
+    &.show {
+      right: 1rem;
+    }
+  
+    .top-button {
+      background-color: #025937;
+      color: #f0e3b7;
+      border: none;
+      border-radius: 50%;
+      padding: 0.5rem 0.5rem;
+      cursor: pointer;
+      outline: none;
+
+      @include mobile{
+        padding: 0;
+      }
+  
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  
