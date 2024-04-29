@@ -7,14 +7,13 @@
     position: sticky;
     top: 0;
     left: 0;
-    padding-top: 50px;
-    text-align: center;
+    padding-top: 150px;
     color: black;
     font-size: 36px;
     z-index: 999;
 
     @include mobile {
-      padding-top: calc(100vh - 100px);
+      padding-top: calc(100vh - 100vh);
       font-size: 24px;
     }
 
@@ -47,14 +46,14 @@
       }
 
       .textContainer {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
+         display: flex;
+         flex-direction: column;
         gap: 30px;
         padding: 2rem;
         color: black;
         border-radius: 10px;
-        width: 500px;
+        width: 800px;
+        font-size: 30px;
 
         @include mobile{
           width:300px;
@@ -64,36 +63,16 @@
           p{
             color: #f0e3b7;
             font-size: 30px;
-            margin-bottom: 10px;
+
+            margin-bottom: 1rem;
           }
           li{
-            margin-top: 10px;
             font-size: 20px;
-            list-style: none;
-           
             height: fit-content;
-
             @include mobile{
               font-size: 15px;
             }
             
-          }
-        }
-
-       
-
-        @include mobile {
-          align-items: center;
-          text-align: center;
-          gap: 10px;
-        }
-
-        p {
-          color: black;
-          font-size: 50px;
-
-          @include mobile {
-            font-size: 16px;
           }
         }
       }
