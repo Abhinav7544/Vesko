@@ -67,6 +67,7 @@ const Portfolio = () => {
         <h2>About Vesko</h2>
         <motion.div style={{ scaleX }} className="progressBar"></motion.div>
       </div>
+      
       {items.map((item) => (
         <Single item={item} key={item.id}/>
       ))}

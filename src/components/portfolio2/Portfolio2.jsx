@@ -44,8 +44,8 @@ const Single = ({ item }) => {
           <motion.div className="textContainer" style={{y}}>
             {item.desc}
           </motion.div>
+          </div>
         </div>
-      </div>
     </section>
   );
 };
