@@ -7,7 +7,6 @@ const items = [
     id: 1,
     desc: "VESKO IS A PLATFORM PROVIDING ONLINE-TO-OFFLINE (O2O) RETAIL SOLUTIONS TAILORED FOR LOCAL OFFLINE RETAILERS",
     backgroundColor: "#4ce4d5",
-    img: "/people.webp"
   },
   {
     id: 2,
@@ -26,7 +25,6 @@ const items = [
            </ul>
     ],
     backgroundColor:"#0dc1af",
-    img: "/people.webp"
   },
 ];
 
@@ -43,14 +41,12 @@ const Single = ({ item }) => {
     <section>
       <div className="container" style={{backgroundColor: item.backgroundColor}}>
         <div className="wrapper">
-        <div className="imageContainer" ref={ref}>
-            <img src={item.img} alt="" />
-          </div>
+        
           <motion.div className="textContainer" style={{y}}>
             {item.desc}
           </motion.div>
+          </div>
         </div>
-      </div>
     </section>
   );
 };

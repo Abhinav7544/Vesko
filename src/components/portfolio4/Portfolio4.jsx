@@ -5,16 +5,13 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 const items = [
   {
     id: 1,
-    title: "Advanced Version",
 desc: "The advance version of Vesko will be able to forecast consumer demands to help Vendors to optimizing their product line to increase sales."
   },
   {
     id: 2,
-    title: "Personal Assistant",
 desc: "Vesko will include Cyber Space that provides Users with tailored products without wasting time on info & product search."  },
   {
     id: 3,
-    title: "Inventory Management",
 desc: "The inventory management system will also include the Cyber Space to assist the employees and optimize store operations to minimize waste"  },
 ];
 
@@ -31,11 +28,7 @@ const Single = ({ item }) => {
     <section >
       <div className="container">
         <div className="wrapper">
-          <div className="imageContainer" ref={ref}>
-            <img src={item.img} alt="" />
-          </div>
           <motion.div className="textContainer" style={{y}}>
-            <h2>{item.title}</h2>
             <p>{item.desc}</p>
           </motion.div>
         </div>

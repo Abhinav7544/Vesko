@@ -59,9 +59,9 @@ const Portfolio2 = () => {
   });
 
   return (
-    <div className="portfolio" id="portfolio" ref={ref}>
+    <div className="portfolio" ref={ref}>
       <div className="progress">
-        <h2>What Vesko will provide for its Users</h2>
+        <h2>Vesko for its Users</h2>
         <motion.div className="progressBar" style={{ scaleX }}></motion.div>
       </div>
       {items.map((item) => (
