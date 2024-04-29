@@ -23,7 +23,7 @@
     }
     .container{
      display: flex;
-     margin-left:90px ;
+     margin-left:130px ;
 
      @include mobile{
       flex-direction: column-reverse;
@@ -52,7 +52,7 @@
             }
           }
           p{
-            font-size: 25px;
+            font-size: 32px;
     
             @include mobile{
               font-size: 18px;
