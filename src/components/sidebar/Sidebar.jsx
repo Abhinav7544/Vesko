@@ -22,29 +22,34 @@ const variants = {
     },
   },
 };
+
 const Sidebar = () => {
   const [open, setOpen] = useState(false);
   const menuRef = useRef();
 
-  useEffect(()=>{
-    const handler = (event)=>{
-      if(!menuRef.current?.contains(event.target)){
-        setOpen(false)
+  useEffect(() => {
+    const handler = (event) => {
+      if (!menuRef.current?.contains(event.target)) {
+        setOpen(false);
       }
-    }
+    };
     document.addEventListener("mousedown", handler);
 
-    return()=>{
-      document.removeEventListener("mousedown", handler)
-    }
-  }, [])
+    return () => {
+      document.removeEventListener("mousedown", handler);
+    };
+  }, []);
 
   return (
-    <motion.div className="sidebar" animate={open ? "open" : "closed"} ref={menuRef}>
+    <motion.div
+      className="sidebar"
+      animate={open ? "open" : "closed"}
+      ref={menuRef}
+    >
       <motion.div className="bg" variants={variants}>
-        <Links/>
+        <Links />
       </motion.div>
-      <ToggleButton setOpen={setOpen} />
+      <ToggleButton setOpen={() => setOpen((prevOpen) => !prevOpen)} />
     </motion.div>
   );
 };

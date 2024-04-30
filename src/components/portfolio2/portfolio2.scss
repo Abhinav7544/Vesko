@@ -1,20 +1,27 @@
 @import "../../app.scss";
 
-.portfolio {
+.vendor{
   position: relative;
+ 
 
   .progress {
     position: sticky;
     top: 0;
     left: 0;
-    padding-top: 150px;
+    text-align: center;
     color: black;
     font-size: 36px;
-    z-index: 999;
+    z-index: 0;
+    padding-top: 30px;
+
+   
 
     @include mobile {
-      padding-top: calc(100vh - 100vh);
+      padding-top: calc(100vh - 100px);
       font-size: 24px;
+    }
+    h2{
+      color:#917929;
     }
 
     .progressBar {
@@ -23,59 +30,28 @@
     }
   }
 
-  .container {
+  .container{
     display: flex;
-    align-items: center;
     justify-content: center;
-    width: 100%;
+    justify-items: center;
+    align-items: center;
     height: 100%;
-    overflow: hidden;
 
-    .wrapper {
-      max-width: 1366px;
-      height: 100%;
-      margin: auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 50px;
+    .wrapper{
 
-      @include mobile {
-        flex-direction: column;
-        gap: 0px;
-      }
+      .textContainer{
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
 
-      .textContainer {
-         display: flex;
-         flex-direction: column;
-        gap: 30px;
-        padding: 2rem;
-        color: black;
-        border-radius: 10px;
-        width: 800px;
-        font-size: 30px;
-
-        @include mobile{
-          width:300px;
-        }
-        ul{
-          
-          p{
-            color: #f0e3b7;
-            font-size: 30px;
-
-            margin-bottom: 1rem;
-          }
-          li{
-            font-size: 20px;
-            height: fit-content;
-            @include mobile{
-              font-size: 15px;
-            }
-            
-          }
+        p{
+          font-size: 25px;
+          padding: 3rem;
+          width: 700px;
         }
       }
     }
   }
-}
+    }
+  
