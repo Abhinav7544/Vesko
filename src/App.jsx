@@ -14,6 +14,7 @@ import TopButton from "./components/topbutton/TopButton";
 const App = () => {
   return (
     <div>
+      <Sidebar />
       <Cursor />
       <section id="homepage">
         <Navbar />
@@ -22,8 +23,11 @@ const App = () => {
       {/* <section id="about">
         <Services />
       </section> */}
-      <Portfolio />
+      
+      <Portfolio/>
+      
       <Portfolio2 />
+      
       <Portfolio3 />
       <Portfolio4 />
       <section id="contact">

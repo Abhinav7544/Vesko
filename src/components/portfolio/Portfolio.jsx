@@ -62,16 +62,20 @@ const Portfolio = () => {
   });
 
   return (
-    <div className="portfolio" id="portfolio" ref={ref}>
+    <motion.div
+    ref={ref}
+    className="about"
+    initial="initial"
+    whileInView="animate"
+  >
       <div className="progress">
         <h2>About Vesko</h2>
         <motion.div style={{ scaleX }} className="progressBar"></motion.div>
       </div>
-      
       {items.map((item) => (
         <Single item={item} key={item.id}/>
       ))}
-    </div>
+    </motion.div>
   );
 };
 
